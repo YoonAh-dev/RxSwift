@@ -127,4 +127,4 @@ func downloadJson(_ url: String) -> Observable<String?> {
 
 - event closure가 순환 참조를 일으키는데 이 closure는 이 observable이 종료될 때 사라진다
 
-- 종료되는 조건은 생명주기의 4, 5
+- 종료되는 조건은 생명주기의 `4, 5`
