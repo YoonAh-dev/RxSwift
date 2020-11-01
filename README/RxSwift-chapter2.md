@@ -152,7 +152,7 @@ let d = Observable.zip(jsonObservable, helloObservable) { $1 + "\n" + $0 }
 
 <br/>
 
-▶️**클로져가 사라지면 클로져가 들고 있던 reference count도 같이 내려 놓는다**
+▶️ **클로져가 사라지면 클로져가 들고 있던 reference count도 같이 내려 놓는다**
 
 <img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/af47b5df-c2e9-4ae2-b0a3-405bbb774455/_2020-11-01__5.01.07.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20201101%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20201101T120055Z&X-Amz-Expires=86400&X-Amz-Signature=411b525b9e02318d7d2061e2a2ef8a88463fab0142b4a4f410df39a31c4b0bd8&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22_2020-11-01__5.01.07.png%22" width="90%"></img>
 
