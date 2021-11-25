@@ -8,8 +8,12 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import RxDataSources
 
 class ViewController: UIViewController, UITableViewDelegate {
+    
+    typealias NameSectionModel = SectionModel<String, String>
+    typealias NameDataSource = RxTableViewSectionedReloadDataSource<NameSectionModel>
 
     // MARK: - @IBOutlet
     
@@ -19,6 +23,7 @@ class ViewController: UIViewController, UITableViewDelegate {
     
     let bag = DisposeBag()
     let rows: [String] = ["duna", "huree", "subin", "haley", "nunu", "ez"]
+    let ages: [String] = ["25", "24", "22", "26", "25", "23"]
     lazy var rowObservable = Observable.of(rows)
     
     // MARK: - View Life Cycle
@@ -26,6 +31,7 @@ class ViewController: UIViewController, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         bindTableView()
+        datasourceTableView()
     }
     
     // MARK: - Bind
@@ -80,6 +86,32 @@ class ViewController: UIViewController, UITableViewDelegate {
         /// UITableViewDelegate를 RxCocoa와 같이 사용하고 싶다면 Delegate를 이렇게 지정해줘야 함
         tableView.rx.setDelegate(self)
             .disposed(by: bag)
+    }
+    
+    private func datasourceTableView() {
+        let sections = [
+            SectionModel<String, String>(model: "first section", items: rows),
+            SectionModel<String, String>(model: "second section", items: ages)
+        ]
+        
+        Observable.just(sections)
+            .bind(to: tableView.rx.items(dataSource: nameDataSource))
+            .disposed(by: bag)
+    }
+    
+    private var nameDataSource: NameDataSource {
+        let configureCell: (TableViewSectionedDataSource<NameSectionModel>, UITableView, IndexPath, String) -> UITableViewCell = { (datasource, tableView, indexPath, element) in
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+            cell.textLabel?.text = element
+            return cell
+        }
+        
+        let datasource = NameDataSource.init(configureCell: configureCell)
+        datasource.titleForHeaderInSection = { datasource, index in
+            return datasource.sectionModels[index].model
+        }
+        
+        return datasource
     }
     
 }
