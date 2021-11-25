@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2CC1664D7985E71B629D7AF /* Pods_Wundercast_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6845C0C3CC6A8623916EC0A0 /* Pods_Wundercast_RxSwift.framework */; };
+		EDB48999274657C900E992CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB48998274657C900E992CB /* AppDelegate.swift */; };
+		EDB4899B274657C900E992CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB4899A274657C900E992CB /* SceneDelegate.swift */; };
+		EDB4899D274657C900E992CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB4899C274657C900E992CB /* ViewController.swift */; };
+		EDB489A0274657C900E992CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB4899E274657C900E992CB /* Main.storyboard */; };
+		EDB489A2274657CA00E992CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB489A1274657CA00E992CB /* Assets.xcassets */; };
+		EDB489A5274657CA00E992CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB489A3274657CA00E992CB /* LaunchScreen.storyboard */; };
+		EDB489B12746599900E992CB /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB489B02746599900E992CB /* Appearance.swift */; };
+		EDB489B3274659C300E992CB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB489B2274659C300E992CB /* Color.swift */; };
+		EDB489B527465A4300E992CB /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB489B427465A4300E992CB /* APIController.swift */; };
+		EDB489B72746678100E992CB /* weather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDB489B62746678100E992CB /* weather.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6845C0C3CC6A8623916EC0A0 /* Pods_Wundercast_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wundercast_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		916605D99B169436A8DB64E2 /* Pods-Wundercast-RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wundercast-RxSwift.release.xcconfig"; path = "Target Support Files/Pods-Wundercast-RxSwift/Pods-Wundercast-RxSwift.release.xcconfig"; sourceTree = "<group>"; };
+		CC8C3CD75769C50D263D8772 /* Pods-Wundercast-RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wundercast-RxSwift.debug.xcconfig"; path = "Target Support Files/Pods-Wundercast-RxSwift/Pods-Wundercast-RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		EDB48995274657C900E992CB /* Wundercast-RxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wundercast-RxSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDB48998274657C900E992CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDB4899A274657C900E992CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EDB4899C274657C900E992CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDB4899F274657C900E992CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDB489A1274657CA00E992CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDB489A4274657CA00E992CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDB489A6274657CA00E992CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDB489B02746599900E992CB /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		EDB489B2274659C300E992CB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		EDB489B427465A4300E992CB /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		EDB489B62746678100E992CB /* weather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = weather.ttf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDB48992274657C900E992CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2CC1664D7985E71B629D7AF /* Pods_Wundercast_RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11FEE1060D67E7AB22D97142 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC8C3CD75769C50D263D8772 /* Pods-Wundercast-RxSwift.debug.xcconfig */,
+				916605D99B169436A8DB64E2 /* Pods-Wundercast-RxSwift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		85FCB2A7CC9F68E97C9096D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6845C0C3CC6A8623916EC0A0 /* Pods_Wundercast_RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDB4898C274657C900E992CB = {
+			isa = PBXGroup;
+			children = (
+				EDB48997274657C900E992CB /* Wundercast-RxSwift */,
+				EDB48996274657C900E992CB /* Products */,
+				11FEE1060D67E7AB22D97142 /* Pods */,
+				85FCB2A7CC9F68E97C9096D0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EDB48996274657C900E992CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDB48995274657C900E992CB /* Wundercast-RxSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDB48997274657C900E992CB /* Wundercast-RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				EDB489B62746678100E992CB /* weather.ttf */,
+				EDB489AF2746590400E992CB /* Storyboards */,
+				EDB489AE274658FE00E992CB /* Controllers */,
+				EDB489AD274658F700E992CB /* Supporting files */,
+				EDB489AC274658F300E992CB /* Utils */,
+				EDB489A1274657CA00E992CB /* Assets.xcassets */,
+			);
+			path = "Wundercast-RxSwift";
+			sourceTree = "<group>";
+		};
+		EDB489AC274658F300E992CB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EDB489B02746599900E992CB /* Appearance.swift */,
+				EDB489B2274659C300E992CB /* Color.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EDB489AD274658F700E992CB /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				EDB489A6274657CA00E992CB /* Info.plist */,
+				EDB48998274657C900E992CB /* AppDelegate.swift */,
+				EDB4899A274657C900E992CB /* SceneDelegate.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		EDB489AE274658FE00E992CB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDB4899C274657C900E992CB /* ViewController.swift */,
+				EDB489B427465A4300E992CB /* APIController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EDB489AF2746590400E992CB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EDB4899E274657C900E992CB /* Main.storyboard */,
+				EDB489A3274657CA00E992CB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDB48994274657C900E992CB /* Wundercast-RxSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDB489A9274657CA00E992CB /* Build configuration list for PBXNativeTarget "Wundercast-RxSwift" */;
+			buildPhases = (
+				EBD4856D0D4B794224D68B42 /* [CP] Check Pods Manifest.lock */,
+				EDB48991274657C900E992CB /* Sources */,
+				EDB48992274657C900E992CB /* Frameworks */,
+				EDB48993274657C900E992CB /* Resources */,
+				0E81A87CE36C6D7441CDBD08 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wundercast-RxSwift";
+			productName = "Wundercast-RxSwift";
+			productReference = EDB48995274657C900E992CB /* Wundercast-RxSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDB4898D274657C900E992CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					EDB48994274657C900E992CB = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = EDB48990274657C900E992CB /* Build configuration list for PBXProject "Wundercast-RxSwift" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDB4898C274657C900E992CB;
+			productRefGroup = EDB48996274657C900E992CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDB48994274657C900E992CB /* Wundercast-RxSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDB48993274657C900E992CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB489A5274657CA00E992CB /* LaunchScreen.storyboard in Resources */,
+				EDB489A2274657CA00E992CB /* Assets.xcassets in Resources */,
+				EDB489A0274657C900E992CB /* Main.storyboard in Resources */,
+				EDB489B72746678100E992CB /* weather.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E81A87CE36C6D7441CDBD08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wundercast-RxSwift/Pods-Wundercast-RxSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wundercast-RxSwift/Pods-Wundercast-RxSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wundercast-RxSwift/Pods-Wundercast-RxSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBD4856D0D4B794224D68B42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wundercast-RxSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDB48991274657C900E992CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB4899D274657C900E992CB /* ViewController.swift in Sources */,
+				EDB48999274657C900E992CB /* AppDelegate.swift in Sources */,
+				EDB489B527465A4300E992CB /* APIController.swift in Sources */,
+				EDB4899B274657C900E992CB /* SceneDelegate.swift in Sources */,
+				EDB489B3274659C300E992CB /* Color.swift in Sources */,
+				EDB489B12746599900E992CB /* Appearance.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EDB4899E274657C900E992CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDB4899F274657C900E992CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDB489A3274657CA00E992CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDB489A4274657CA00E992CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDB489A7274657CA00E992CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EDB489A8274657CA00E992CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDB489AA274657CA00E992CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC8C3CD75769C50D263D8772 /* Pods-Wundercast-RxSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Wundercast-RxSwift/Supporting files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tiekle.Wundercast-RxSwift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDB489AB274657CA00E992CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 916605D99B169436A8DB64E2 /* Pods-Wundercast-RxSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Wundercast-RxSwift/Supporting files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tiekle.Wundercast-RxSwift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDB48990274657C900E992CB /* Build configuration list for PBXProject "Wundercast-RxSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDB489A7274657CA00E992CB /* Debug */,
+				EDB489A8274657CA00E992CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDB489A9274657CA00E992CB /* Build configuration list for PBXNativeTarget "Wundercast-RxSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDB489AA274657CA00E992CB /* Debug */,
+				EDB489AB274657CA00E992CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDB4898D274657C900E992CB /* Project object */;
+}
