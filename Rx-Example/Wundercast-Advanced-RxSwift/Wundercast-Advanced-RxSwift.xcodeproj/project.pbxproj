@@ -14,6 +14,12 @@
 		ED500485274FB6D600A78B10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED500483274FB6D600A78B10 /* Main.storyboard */; };
 		ED500487274FB6D800A78B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED500486274FB6D800A78B10 /* Assets.xcassets */; };
 		ED50048A274FB6D800A78B10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED500488274FB6D800A78B10 /* LaunchScreen.storyboard */; };
+		ED500496274FB80800A78B10 /* weather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED500495274FB80800A78B10 /* weather.ttf */; };
+		ED500498274FB81C00A78B10 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED500497274FB81C00A78B10 /* Colors.swift */; };
+		ED50049A274FB87900A78B10 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED500499274FB87900A78B10 /* Appearance.swift */; };
+		ED50049C274FBE5B00A78B10 /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED50049B274FBE5B00A78B10 /* CLLocationManager+Rx.swift */; };
+		ED50049E274FBFC100A78B10 /* MKMapView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED50049D274FBFC100A78B10 /* MKMapView+Rx.swift */; };
+		ED5004A0274FC20400A78B10 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED50049F274FC20400A78B10 /* APIController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +33,12 @@
 		ED500486274FB6D800A78B10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED500489274FB6D800A78B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED50048B274FB6D800A78B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED500495274FB80800A78B10 /* weather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = weather.ttf; sourceTree = "<group>"; };
+		ED500497274FB81C00A78B10 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		ED500499274FB87900A78B10 /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		ED50049B274FBE5B00A78B10 /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
+		ED50049D274FBFC100A78B10 /* MKMapView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Rx.swift"; sourceTree = "<group>"; };
+		ED50049F274FC20400A78B10 /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		F15E1B61D53393401A048D14 /* Pods-Wundercast-Advanced-RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wundercast-Advanced-RxSwift.debug.xcconfig"; path = "Target Support Files/Pods-Wundercast-Advanced-RxSwift/Pods-Wundercast-Advanced-RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +60,6 @@
 				F15E1B61D53393401A048D14 /* Pods-Wundercast-Advanced-RxSwift.debug.xcconfig */,
 				E5E08A21ADE1B3393BB0A932 /* Pods-Wundercast-Advanced-RxSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +92,10 @@
 		ED50047C274FB6D600A78B10 /* Wundercast-Advanced-RxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				ED500494274FB7E800A78B10 /* Utils */,
+				ED500493274FB7E100A78B10 /* Extensions */,
+				ED500492274FB7DE00A78B10 /* Controllers */,
+				ED500491274FB7D900A78B10 /* Assets */,
 				ED50047D274FB6D600A78B10 /* AppDelegate.swift */,
 				ED50047F274FB6D600A78B10 /* SceneDelegate.swift */,
 				ED500481274FB6D600A78B10 /* ViewController.swift */,
@@ -90,6 +105,40 @@
 				ED50048B274FB6D800A78B10 /* Info.plist */,
 			);
 			path = "Wundercast-Advanced-RxSwift";
+			sourceTree = "<group>";
+		};
+		ED500491274FB7D900A78B10 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				ED500495274FB80800A78B10 /* weather.ttf */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		ED500492274FB7DE00A78B10 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED50049F274FC20400A78B10 /* APIController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ED500493274FB7E100A78B10 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ED50049B274FBE5B00A78B10 /* CLLocationManager+Rx.swift */,
+				ED50049D274FBFC100A78B10 /* MKMapView+Rx.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ED500494274FB7E800A78B10 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ED500497274FB81C00A78B10 /* Colors.swift */,
+				ED500499274FB87900A78B10 /* Appearance.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +204,7 @@
 				ED50048A274FB6D800A78B10 /* LaunchScreen.storyboard in Resources */,
 				ED500487274FB6D800A78B10 /* Assets.xcassets in Resources */,
 				ED500485274FB6D600A78B10 /* Main.storyboard in Resources */,
+				ED500496274FB80800A78B10 /* weather.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,9 +257,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED50049A274FB87900A78B10 /* Appearance.swift in Sources */,
 				ED500482274FB6D600A78B10 /* ViewController.swift in Sources */,
+				ED500498274FB81C00A78B10 /* Colors.swift in Sources */,
+				ED50049E274FBFC100A78B10 /* MKMapView+Rx.swift in Sources */,
+				ED5004A0274FC20400A78B10 /* APIController.swift in Sources */,
 				ED50047E274FB6D600A78B10 /* AppDelegate.swift in Sources */,
 				ED500480274FB6D600A78B10 /* SceneDelegate.swift in Sources */,
+				ED50049C274FBE5B00A78B10 /* CLLocationManager+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
