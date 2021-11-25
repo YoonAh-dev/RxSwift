@@ -14,6 +14,8 @@
 		ED50045C274F730800A78B10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED50045A274F730800A78B10 /* Main.storyboard */; };
 		ED50045E274F730A00A78B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED50045D274F730A00A78B10 /* Assets.xcassets */; };
 		ED500461274F730A00A78B10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED50045F274F730A00A78B10 /* LaunchScreen.storyboard */; };
+		ED500469274FACBA00A78B10 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED500468274FACBA00A78B10 /* Product.swift */; };
+		ED500470274FAEE100A78B10 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED50046F274FAEE100A78B10 /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		ED50045D274F730A00A78B10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED500460274F730A00A78B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED500462274F730A00A78B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED500468274FACBA00A78B10 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		ED50046F274FAEE100A78B10 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		FB06D89134C2DBD5A8B834A4 /* Pods_TableView_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableView_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -48,7 +52,6 @@
 				0CEF09FF99540B9F14125C79 /* Pods-TableView-RxSwift.debug.xcconfig */,
 				48792BBD04BF718D8BF4BC78 /* Pods-TableView-RxSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +84,57 @@
 		ED500453274F730800A78B10 /* TableView-RxSwift */ = {
 			isa = PBXGroup;
 			children = (
-				ED500454274F730800A78B10 /* AppDelegate.swift */,
-				ED500456274F730800A78B10 /* SceneDelegate.swift */,
-				ED500458274F730800A78B10 /* ViewController.swift */,
-				ED50045A274F730800A78B10 /* Main.storyboard */,
-				ED50045D274F730A00A78B10 /* Assets.xcassets */,
-				ED50045F274F730A00A78B10 /* LaunchScreen.storyboard */,
-				ED500462274F730A00A78B10 /* Info.plist */,
+				ED50046E274FAEAE00A78B10 /* Model */,
+				ED50046C274FAEA600A78B10 /* Resource */,
+				ED50046B274FAEA000A78B10 /* ViewController */,
+				ED50046A274FAE9900A78B10 /* Supporting files */,
 			);
 			path = "TableView-RxSwift";
+			sourceTree = "<group>";
+		};
+		ED50046A274FAE9900A78B10 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				ED500454274F730800A78B10 /* AppDelegate.swift */,
+				ED500456274F730800A78B10 /* SceneDelegate.swift */,
+				ED500462274F730A00A78B10 /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		ED50046B274FAEA000A78B10 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ED500458274F730800A78B10 /* ViewController.swift */,
+				ED50046F274FAEE100A78B10 /* CollectionViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		ED50046C274FAEA600A78B10 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				ED50045D274F730A00A78B10 /* Assets.xcassets */,
+				ED50046D274FAEAA00A78B10 /* SB */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		ED50046D274FAEAA00A78B10 /* SB */ = {
+			isa = PBXGroup;
+			children = (
+				ED50045A274F730800A78B10 /* Main.storyboard */,
+				ED50045F274F730A00A78B10 /* LaunchScreen.storyboard */,
+			);
+			path = SB;
+			sourceTree = "<group>";
+		};
+		ED50046E274FAEAE00A78B10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED500468274FACBA00A78B10 /* Product.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,8 +253,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED500459274F730800A78B10 /* ViewController.swift in Sources */,
+				ED500469274FACBA00A78B10 /* Product.swift in Sources */,
 				ED500455274F730800A78B10 /* AppDelegate.swift in Sources */,
 				ED500457274F730800A78B10 /* SceneDelegate.swift in Sources */,
+				ED500470274FAEE100A78B10 /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +407,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TableView-RxSwift/Info.plist";
+				INFOPLIST_FILE = "TableView-RxSwift/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -388,7 +435,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TableView-RxSwift/Info.plist";
+				INFOPLIST_FILE = "TableView-RxSwift/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
