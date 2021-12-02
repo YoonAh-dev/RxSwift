@@ -20,6 +20,7 @@
 		ED50049C274FBE5B00A78B10 /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED50049B274FBE5B00A78B10 /* CLLocationManager+Rx.swift */; };
 		ED50049E274FBFC100A78B10 /* MKMapView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED50049D274FBFC100A78B10 /* MKMapView+Rx.swift */; };
 		ED5004A0274FC20400A78B10 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED50049F274FC20400A78B10 /* APIController.swift */; };
+		EDE3E071275866440062510F /* RxReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE3E070275866440062510F /* RxReachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		ED50049B274FBE5B00A78B10 /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
 		ED50049D274FBFC100A78B10 /* MKMapView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Rx.swift"; sourceTree = "<group>"; };
 		ED50049F274FC20400A78B10 /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		EDE3E070275866440062510F /* RxReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxReachability.swift; sourceTree = "<group>"; };
 		F15E1B61D53393401A048D14 /* Pods-Wundercast-Advanced-RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wundercast-Advanced-RxSwift.debug.xcconfig"; path = "Target Support Files/Pods-Wundercast-Advanced-RxSwift/Pods-Wundercast-Advanced-RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +130,7 @@
 			children = (
 				ED50049B274FBE5B00A78B10 /* CLLocationManager+Rx.swift */,
 				ED50049D274FBFC100A78B10 /* MKMapView+Rx.swift */,
+				EDE3E070275866440062510F /* RxReachability.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				ED50047E274FB6D600A78B10 /* AppDelegate.swift in Sources */,
 				ED500480274FB6D600A78B10 /* SceneDelegate.swift in Sources */,
 				ED50049C274FBE5B00A78B10 /* CLLocationManager+Rx.swift in Sources */,
+				EDE3E071275866440062510F /* RxReachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
