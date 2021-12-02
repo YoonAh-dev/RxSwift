@@ -21,6 +21,8 @@
 		ED50049E274FBFC100A78B10 /* MKMapView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED50049D274FBFC100A78B10 /* MKMapView+Rx.swift */; };
 		ED5004A0274FC20400A78B10 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED50049F274FC20400A78B10 /* APIController.swift */; };
 		EDE3E071275866440062510F /* RxReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE3E070275866440062510F /* RxReachability.swift */; };
+		EDE3E07427586F600062510F /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE3E07327586F600062510F /* InfoView.swift */; };
+		EDE3E07627586F6C0062510F /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE3E07527586F6C0062510F /* InfoView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		ED50049D274FBFC100A78B10 /* MKMapView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Rx.swift"; sourceTree = "<group>"; };
 		ED50049F274FC20400A78B10 /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		EDE3E070275866440062510F /* RxReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxReachability.swift; sourceTree = "<group>"; };
+		EDE3E07327586F600062510F /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		EDE3E07527586F6C0062510F /* InfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoView.xib; sourceTree = "<group>"; };
 		F15E1B61D53393401A048D14 /* Pods-Wundercast-Advanced-RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wundercast-Advanced-RxSwift.debug.xcconfig"; path = "Target Support Files/Pods-Wundercast-Advanced-RxSwift/Pods-Wundercast-Advanced-RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,13 +98,13 @@
 		ED50047C274FB6D600A78B10 /* Wundercast-Advanced-RxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				EDE3E07227586F330062510F /* View */,
 				ED500494274FB7E800A78B10 /* Utils */,
 				ED500493274FB7E100A78B10 /* Extensions */,
 				ED500492274FB7DE00A78B10 /* Controllers */,
 				ED500491274FB7D900A78B10 /* Assets */,
 				ED50047D274FB6D600A78B10 /* AppDelegate.swift */,
 				ED50047F274FB6D600A78B10 /* SceneDelegate.swift */,
-				ED500481274FB6D600A78B10 /* ViewController.swift */,
 				ED500483274FB6D600A78B10 /* Main.storyboard */,
 				ED500486274FB6D800A78B10 /* Assets.xcassets */,
 				ED500488274FB6D800A78B10 /* LaunchScreen.storyboard */,
@@ -120,6 +124,7 @@
 		ED500492274FB7DE00A78B10 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ED500481274FB6D600A78B10 /* ViewController.swift */,
 				ED50049F274FC20400A78B10 /* APIController.swift */,
 			);
 			path = Controllers;
@@ -142,6 +147,15 @@
 				ED500499274FB87900A78B10 /* Appearance.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		EDE3E07227586F330062510F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDE3E07327586F600062510F /* InfoView.swift */,
+				EDE3E07527586F6C0062510F /* InfoView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +220,7 @@
 			files = (
 				ED50048A274FB6D800A78B10 /* LaunchScreen.storyboard in Resources */,
 				ED500487274FB6D800A78B10 /* Assets.xcassets in Resources */,
+				EDE3E07627586F6C0062510F /* InfoView.xib in Resources */,
 				ED500485274FB6D600A78B10 /* Main.storyboard in Resources */,
 				ED500496274FB80800A78B10 /* weather.ttf in Resources */,
 			);
@@ -268,6 +283,7 @@
 				ED50047E274FB6D600A78B10 /* AppDelegate.swift in Sources */,
 				ED500480274FB6D600A78B10 /* SceneDelegate.swift in Sources */,
 				ED50049C274FBE5B00A78B10 /* CLLocationManager+Rx.swift in Sources */,
+				EDE3E07427586F600062510F /* InfoView.swift in Sources */,
 				EDE3E071275866440062510F /* RxReachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

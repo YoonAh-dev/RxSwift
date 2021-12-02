@@ -20,7 +20,7 @@ class APIController {
     
     // MARK: - Private Properties
     
-    private let apiKey = BehaviorSubject(value: "b96003f4589f56458893a32ae638a485")
+    var apiKey = BehaviorSubject(value: "b96003f4589f56458893a32ae638a485")
     private let baseURL = URL(string: "http://api.openweathermap.org/data/2.5")!
     
     // MARK: - Initalizer

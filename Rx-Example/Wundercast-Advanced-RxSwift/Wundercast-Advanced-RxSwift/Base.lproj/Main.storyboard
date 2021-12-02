@@ -83,6 +83,11 @@
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="aKb-vz-1S6">
                                 <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3I5-Sn-7e4">
+                                <rect key="frame" x="25" y="150" width="39" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="key.fill" catalog="system"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bIt-aJ-iUF"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -91,7 +96,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="IZi-NF-qtR" secondAttribute="trailing" id="2bt-cW-8AA"/>
                             <constraint firstItem="dAp-cm-11Y" firstAttribute="top" secondItem="SHD-ll-dVx" secondAttribute="bottom" constant="11" id="5M4-HO-kDb"/>
                             <constraint firstItem="zQR-QR-glB" firstAttribute="width" secondItem="nOi-6W-DFB" secondAttribute="width" id="77O-7P-ywC"/>
+                            <constraint firstItem="3I5-Sn-7e4" firstAttribute="top" secondItem="IZi-NF-qtR" secondAttribute="bottom" constant="50" id="7hR-O5-Gn2"/>
                             <constraint firstItem="zQR-QR-glB" firstAttribute="top" secondItem="nOi-6W-DFB" secondAttribute="bottom" constant="8" id="8cV-wz-iPw"/>
+                            <constraint firstItem="3I5-Sn-7e4" firstAttribute="leading" secondItem="bIt-aJ-iUF" secondAttribute="leading" constant="25" id="AYf-HU-rIj"/>
                             <constraint firstItem="nOi-6W-DFB" firstAttribute="top" secondItem="Lma-Ml-wNF" secondAttribute="bottom" constant="8" id="Ea9-c8-E4y"/>
                             <constraint firstItem="nOi-6W-DFB" firstAttribute="top" secondItem="7bC-4i-9Jy" secondAttribute="bottom" constant="8" id="Eta-Q0-wbV"/>
                             <constraint firstItem="7bC-4i-9Jy" firstAttribute="leading" secondItem="nOi-6W-DFB" secondAttribute="leading" id="GU1-E2-2mv"/>
@@ -119,6 +126,7 @@
                         <outlet property="geoLocationButton" destination="b5x-EJ-2V0" id="Ann-5Y-9vX"/>
                         <outlet property="humidityLabel" destination="Lma-Ml-wNF" id="2cM-nB-DDD"/>
                         <outlet property="iconLabel" destination="nOi-6W-DFB" id="lbJ-yS-8qc"/>
+                        <outlet property="keyButton" destination="3I5-Sn-7e4" id="mM2-nr-Gbv"/>
                         <outlet property="mapButton" destination="SHD-ll-dVx" id="yS5-nn-zuo"/>
                         <outlet property="mapView" destination="r4n-CV-1fL" id="xa8-a8-HPD"/>
                         <outlet property="searchCityName" destination="IZi-NF-qtR" id="UdO-iJ-dDl"/>
@@ -131,6 +139,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="key.fill" catalog="system" width="83" height="128"/>
         <image name="map" width="32" height="31"/>
         <image name="place-location" width="24" height="32"/>
     </resources>
