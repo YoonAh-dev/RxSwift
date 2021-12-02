@@ -20,7 +20,7 @@ class APIController {
     
     // MARK: - Private Properties
     
-    private let apiKey = "b96003f4589f56458893a32ae638a485"
+    private let apiKey = BehaviorSubject(value: "b96003f4589f56458893a32ae638a485")
     private let baseURL = URL(string: "http://api.openweathermap.org/data/2.5")!
     
     // MARK: - Initalizer
@@ -29,6 +29,14 @@ class APIController {
         URLSession.rx.shouldLogRequest = { request in
             return true
         }
+    }
+    
+    // MARK: - API ERROR
+    
+    enum APIError: Error {
+        case cityNotFound
+        case serverFailure
+        case invalidKey
     }
     
     //MARK: - API Calls
@@ -78,33 +86,54 @@ class APIController {
     private func buildRequest(method: String = "GET",
                               pathComponent: String,
                               params: [(String, String)]) -> Observable<JSON> {
-        let url = baseURL.appendingPathComponent(pathComponent)
-        let keyQueryItem = URLQueryItem(name: "appid", value: apiKey)
-        let unitsQueryItem = URLQueryItem(name: "units", value: "metric")
-        let urlComponents = NSURLComponents(url: url, resolvingAgainstBaseURL: true)!
-        var request = URLRequest(url: url)
         
-        switch method {
-        case "GET":
-            var queryItems = params.map { URLQueryItem(name: $0.0, value: $0.1) }
-            queryItems.append(keyQueryItem)
-            queryItems.append(unitsQueryItem)
-            urlComponents.queryItems = queryItems
-        default:
-            urlComponents.queryItems = [keyQueryItem, unitsQueryItem]
+        let request: Observable<URLRequest> = Observable.create() { [weak self] observer in
+            guard let self = self else { fatalError() }
+            let url = self.baseURL.appendingPathComponent(pathComponent)
+            let keyQueryItem = URLQueryItem(name: "appid", value: try? self.apiKey.value())
+            let unitsQueryItem = URLQueryItem(name: "units", value: "metric")
+            let urlComponents = NSURLComponents(url: url, resolvingAgainstBaseURL: true)!
+            var request = URLRequest(url: url)
             
-            let jsonData = try! JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
-            request.httpBody = jsonData
+            switch method {
+            case "GET":
+                var queryItems = params.map { URLQueryItem(name: $0.0, value: $0.1) }
+                queryItems.append(keyQueryItem)
+                queryItems.append(unitsQueryItem)
+                urlComponents.queryItems = queryItems
+            default:
+                urlComponents.queryItems = [keyQueryItem, unitsQueryItem]
+                
+                let jsonData = try! JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
+                request.httpBody = jsonData
+            }
+            
+            request.url = urlComponents.url!
+            request.httpMethod = method
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            
+            observer.onNext(request)
+            observer.onCompleted()
+            
+            return Disposables.create()
         }
-        
-        request.url = urlComponents.url!
-        request.httpMethod = method
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
         let session = URLSession.shared
         
-        return session.rx.data(request: request)
-                         .compactMap { try? JSON(data: $0) }
+        /// Error의 사용자 화
+        return request.flatMap() { request in
+            return session.rx.response(request: request).map() { response, data in
+                if 200 ..< 300 ~= response.statusCode {
+                    return try JSON(data: data)
+                } else if response.statusCode == 401 {
+                    throw APIError.invalidKey
+                } else if 400 ..< 500 ~= response.statusCode {
+                    throw APIError.cityNotFound
+                } else {
+                    throw APIError.serverFailure
+                }
+            }
+        }
     }
     
     // MARK: - Weather
